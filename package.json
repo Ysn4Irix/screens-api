@@ -1,0 +1,52 @@
+{
+	"name": "screens-api",
+	"version": "1.0.0",
+	"description": "An api for taking screenshots of any website with custom dimensions",
+	"main": "server.js",
+	"scripts": {
+		"start": "cross-env NODE_ENV=production node server.js",
+		"dev": "cross-env NODE_ENV=development nodemon server.js",
+		"format": "prettier --write \"./**/*.{js,json}\""
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/Ysn4Irix/screens-api.git"
+	},
+	"keywords": [
+		"api",
+		"puppeteer",
+		"web-scraping",
+		"automation",
+		"javascript",
+		"screenshots",
+		"express",
+		"nodejs"
+	],
+	"author": "Ysn4Irix",
+	"license": "MIT",
+	"bugs": {
+		"url": "git+https://github.com/Ysn4Irix/screens-api/issues"
+	},
+	"homepage": "https://github.com/Ysn4Irix/screens-api#readme",
+	"dependencies": {
+		"cors": "^2.8.5",
+		"dotenv": "^16.0.1",
+		"express": "^4.18.1",
+		"helmet": "^6.0.0",
+		"joi": "^17.6.3",
+		"morgan": "^1.10.0",
+		"puppeteer": "^18.2.1",
+		"response-time": "^2.3.2",
+		"signale": "^1.4.0"
+	},
+	"devDependencies": {
+		"@types/express": "^4.17.13",
+		"@types/node": "^18.7.13",
+		"cross-env": "^7.0.3",
+		"nodemon": "^2.0.19",
+		"prettier": "^2.7.1"
+	},
+	"engines": {
+		"node": ">=15"
+	}
+}
