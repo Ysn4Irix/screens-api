@@ -81,7 +81,7 @@ curl -X POST \
 
 Once you've cloned the project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
 
--   rename .env.example to .env add replace PORT (optional)
+-   edit `PORT` (optional) in .env
 
 ```sh
 # start the dev server
