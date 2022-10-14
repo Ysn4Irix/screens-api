@@ -11,7 +11,15 @@ const { PORT, NODE_ENV } = process.env
 if (NODE_ENV === 'development') app.use(morgan('dev'))
 app.use(responseTime())
 app.use(helmet())
-app.use(cors())
+app.use(
+	cors({
+		origin:
+			NODE_ENV === 'production'
+				? 'https://screensy.vercel.app'
+				: 'http://localhost:5173',
+		optionsSuccessStatus: 200
+	})
+)
 app.use(express.json())
 app.use(
 	express.urlencoded({
