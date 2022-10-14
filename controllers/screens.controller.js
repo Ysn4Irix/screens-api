@@ -22,7 +22,7 @@ module.exports = {
 			logger.error(err.message)
 			res.status(500).json(
 				error(
-					'Oops! We have an problem in our backend 😢',
+					'Oops! We have an problem verify you url',
 					res.statusCode
 				)
 			)
@@ -127,7 +127,7 @@ module.exports = {
 			logger.error(err.message)
 			res.status(500).json(
 				error(
-					'Oops! We have an problem in our backend 😢',
+					'Oops! We have an problem verify you url',
 					res.statusCode
 				)
 			)
