@@ -15,7 +15,7 @@ app.use(
 	cors({
 		origin:
 			NODE_ENV === 'production'
-				? 'https://screensy.vercel.app'
+				? 'https://screens.su.ysnirix.live'
 				: 'http://localhost:5173',
 		optionsSuccessStatus: 200
 	})
