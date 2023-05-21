@@ -85,6 +85,7 @@ module.exports = {
 			]
 
 			const browser = await puppeteer.launch({
+				headless: 'new',
 				defaultViewport: {
 					width: parseInt(width),
 					height: parseInt(height)
